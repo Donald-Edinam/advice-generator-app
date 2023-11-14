@@ -1,0 +1,77 @@
+@import 'https://fonts.google.com/specimen/Manrope';
+
+:root{
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+    --quote-size: 28px;
+    --font-family: 'Manrope', sans-serif;
+    --font-weight: 800;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body{
+    background: var(--dark-blue);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 550px;
+    height: 250px;
+    background: var(--grayish-blue);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 14px var(--dark-grayish-blue);
+    padding: 50px 20px;
+}
+
+h6.advice-num{
+    color: var(--neon-green);
+}
+
+.main-advice{
+
+}
+
+.main-advice p{
+    font-size: var(--quote-size);
+    text-align: center;
+    color: var(--light-cyan);
+    padding: 20px 10px;
+    font-weight: var(--font-weight);
+}
+
+.opt-imgs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opt-imgs img:nth-child(1){
+    width: 60%;
+    padding: 10px;
+}
+
+.opt-imgs img:nth-child(2){
+    position: relative;
+    top: 35px;
+    z-index: 1000;
+    background-color: var(--neon-green);
+    padding: 10px;
+    border-radius: 50%;
+}
